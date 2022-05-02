@@ -1,9 +1,14 @@
-export default function Home() {
+import React from "react";
+import { TodoComponent } from "../components/todo";
+
+const TodoPage = () => {
   return (
-    <div className="container mx-auto flex justify-center items-center h-screen">
-      <h1 className="text-center text-5xl font-bold">
-        Next Js, starter with typescript, jest, and tailwaindcss
-      </h1>
+    <div className="w-screen h-screen flex justify-center items-center">
+      <div className="container mx-auto">
+        <TodoComponent />
+      </div>
     </div>
   );
-}
+};
+
+export default TodoPage;
